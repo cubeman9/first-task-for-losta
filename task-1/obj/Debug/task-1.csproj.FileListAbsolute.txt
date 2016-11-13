@@ -1,0 +1,16 @@
+C:\coding\task-1\task-1\bin\Debug\task-1.exe.config
+C:\coding\task-1\task-1\bin\Debug\task-1.exe
+C:\coding\task-1\task-1\bin\Debug\task-1.pdb
+C:\coding\task-1\task-1\bin\Debug\EntityFramework.dll
+C:\coding\task-1\task-1\bin\Debug\EntityFramework.SqlServer.dll
+C:\coding\task-1\task-1\bin\Debug\EntityFramework6.Npgsql.dll
+C:\coding\task-1\task-1\bin\Debug\Npgsql.dll
+C:\coding\task-1\task-1\bin\Debug\EntityFramework.xml
+C:\coding\task-1\task-1\bin\Debug\EntityFramework.SqlServer.xml
+C:\coding\task-1\task-1\bin\Debug\EntityFramework6.Npgsql.xml
+C:\coding\task-1\task-1\obj\Debug\task-1.csprojResolveAssemblyReference.cache
+C:\coding\task-1\task-1\obj\Debug\task_1.Properties.Resources.resources
+C:\coding\task-1\task-1\obj\Debug\task-1.csproj.GenerateResource.Cache
+C:\coding\task-1\task-1\obj\Debug\task-1.exe
+C:\coding\task-1\task-1\obj\Debug\task-1.pdb
+C:\coding\task-1\task-1\obj\Debug\task_1.Form1.resources
