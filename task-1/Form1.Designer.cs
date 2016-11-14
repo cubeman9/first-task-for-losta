@@ -38,7 +38,7 @@
             this.clearButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.findByComboBox = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -50,11 +50,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.sortByComboBox = new System.Windows.Forms.ComboBox();
+            this.calculateButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.defaultStartButton = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.configStartButton = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -198,7 +198,7 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox1, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.findByComboBox, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(4, 4);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -220,22 +220,22 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Visible = false;
             // 
-            // comboBox1
+            // findByComboBox
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.comboBox1.Enabled = false;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.findByComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.findByComboBox.Enabled = false;
+            this.findByComboBox.FormattingEnabled = true;
+            this.findByComboBox.Items.AddRange(new object[] {
             "lastname",
             "dep_name",
             "post_name",
             "status_name"});
-            this.comboBox1.Location = new System.Drawing.Point(201, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(159, 21);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.Visible = false;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.findByComboBox.Location = new System.Drawing.Point(201, 3);
+            this.findByComboBox.Name = "findByComboBox";
+            this.findByComboBox.Size = new System.Drawing.Size(159, 21);
+            this.findByComboBox.TabIndex = 2;
+            this.findByComboBox.Visible = false;
+            this.findByComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // tableLayoutPanel6
             // 
@@ -339,8 +339,8 @@
             this.tableLayoutPanel7.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.label6, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.label7, 0, 1);
-            this.tableLayoutPanel7.Controls.Add(this.comboBox3, 1, 1);
-            this.tableLayoutPanel7.Controls.Add(this.button1, 1, 2);
+            this.tableLayoutPanel7.Controls.Add(this.sortByComboBox, 1, 1);
+            this.tableLayoutPanel7.Controls.Add(this.calculateButton, 1, 2);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(392, 140);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -389,33 +389,33 @@
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label7.Visible = false;
             // 
-            // comboBox3
+            // sortByComboBox
             // 
-            this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox3.Enabled = false;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.sortByComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.sortByComboBox.Enabled = false;
+            this.sortByComboBox.FormattingEnabled = true;
+            this.sortByComboBox.Items.AddRange(new object[] {
             "employ_date",
             "unemploy"});
-            this.comboBox3.Location = new System.Drawing.Point(194, 58);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(186, 21);
-            this.comboBox3.TabIndex = 3;
-            this.comboBox3.Visible = false;
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            this.sortByComboBox.Location = new System.Drawing.Point(194, 58);
+            this.sortByComboBox.Name = "sortByComboBox";
+            this.sortByComboBox.Size = new System.Drawing.Size(186, 21);
+            this.sortByComboBox.TabIndex = 3;
+            this.sortByComboBox.Visible = false;
+            this.sortByComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
-            // button1
+            // calculateButton
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(194, 97);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 32);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Calculate";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.calculateButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.calculateButton.Enabled = false;
+            this.calculateButton.Location = new System.Drawing.Point(194, 97);
+            this.calculateButton.Name = "calculateButton";
+            this.calculateButton.Size = new System.Drawing.Size(186, 32);
+            this.calculateButton.TabIndex = 4;
+            this.calculateButton.Text = "Calculate";
+            this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Visible = false;
+            this.calculateButton.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // tableLayoutPanel8
             // 
@@ -423,7 +423,7 @@
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.Controls.Add(this.defaultStartButton, 0, 1);
-            this.tableLayoutPanel8.Controls.Add(this.button2, 1, 1);
+            this.tableLayoutPanel8.Controls.Add(this.configStartButton, 1, 1);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(392, 3);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
@@ -445,17 +445,17 @@
             this.defaultStartButton.UseVisualStyleBackColor = true;
             this.defaultStartButton.Click += new System.EventHandler(this.defaultStartButton_Click);
             // 
-            // button2
+            // configStartButton
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.AutoSize = true;
-            this.button2.Location = new System.Drawing.Point(218, 75);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(137, 46);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Start with custom settings";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.configStartButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.configStartButton.AutoSize = true;
+            this.configStartButton.Location = new System.Drawing.Point(218, 75);
+            this.configStartButton.Name = "configStartButton";
+            this.configStartButton.Size = new System.Drawing.Size(137, 46);
+            this.configStartButton.TabIndex = 2;
+            this.configStartButton.Text = "Start with custom settings";
+            this.configStartButton.UseVisualStyleBackColor = true;
+            this.configStartButton.Click += new System.EventHandler(this.button2_Click);
             // 
             // openFileDialog1
             // 
@@ -504,7 +504,7 @@
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox findByComboBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -516,11 +516,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox sortByComboBox;
+        private System.Windows.Forms.Button calculateButton;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.Button defaultStartButton;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button configStartButton;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

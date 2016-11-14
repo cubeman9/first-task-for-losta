@@ -51,12 +51,12 @@ namespace task_1
                 {
                     comboBox2.Items.Add(drStatusArray[i]["name"].ToString());
                 }
-                comboBox1.SelectedIndex = 0;
+                findByComboBox.SelectedIndex = 0;
                 comboBox2.SelectedIndex = 0;
-                comboBox3.SelectedIndex = 0;
-                selectedState = comboBox1.SelectedItem.ToString();
+                sortByComboBox.SelectedIndex = 0;
+                selectedState = findByComboBox.SelectedItem.ToString();
                 selectedStatus = comboBox2.SelectedItem.ToString();
-                selectedEmploy = comboBox3.SelectedItem.ToString();
+                selectedEmploy = sortByComboBox.SelectedItem.ToString();
                 dateFrom = dateTimePicker1.Value.ToString("yyyy-MM-dd");
                 dateTo = dateTimePicker2.Value.ToString("yyyy-MM-dd");
                 dataGridView1.DataSource = dt;
@@ -64,20 +64,20 @@ namespace task_1
 
                 dataGridView1.Visible = true;
                 dataGridView1.Enabled = true;
-                comboBox1.Visible = true;
-                comboBox1.Enabled = true;
+                findByComboBox.Visible = true;
+                findByComboBox.Enabled = true;
                 comboBox2.Visible = true;
                 comboBox2.Enabled = true;
-                comboBox3.Visible = true;
-                comboBox3.Enabled = true;
+                sortByComboBox.Visible = true;
+                sortByComboBox.Enabled = true;
                 findByTextBox.Visible = true;
                 findByTextBox.Enabled = true;
                 findButton.Visible = true;
                 findButton.Enabled = true;
                 clearButton.Visible = true;
                 clearButton.Enabled = true;
-                button1.Visible = true;
-                button1.Enabled = true;
+                calculateButton.Visible = true;
+                calculateButton.Enabled = true;
                 tableLayoutPanel3.Visible = true;
                 tableLayoutPanel3.Enabled = true;
                 label1.Visible = true;
@@ -118,7 +118,7 @@ namespace task_1
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            selectedState = comboBox1.SelectedItem.ToString();
+            selectedState = findByComboBox.SelectedItem.ToString();
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -139,7 +139,7 @@ namespace task_1
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            selectedEmploy = comboBox3.SelectedItem.ToString();
+            selectedEmploy = sortByComboBox.SelectedItem.ToString();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -152,8 +152,8 @@ namespace task_1
             Startup("95.213.204.15", "5432", "testuser", "testuser", "kek");
             defaultStartButton.Visible = false;
             defaultStartButton.Enabled = false;
-            button2.Visible = false;
-            button2.Enabled = false;
+            configStartButton.Visible = false;
+            configStartButton.Enabled = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -171,8 +171,8 @@ namespace task_1
             Startup(server, port, user, pass, db);
             defaultStartButton.Visible = false;
             defaultStartButton.Enabled = false;
-            button2.Visible = false;
-            button2.Enabled = false;
+            configStartButton.Visible = false;
+            configStartButton.Enabled = false;
         }
     }
 
